@@ -933,9 +933,9 @@ function splatPointer (pointer) {
 function multipleSplats (amount) {
     for (var i = 0; i < amount; i++) {
         var color = generateColor();
-        color.r *= 10.0;
-        color.g *= 10.0;
-        color.b *= 10.0;
+        color.r *= 4.0;
+        color.g *= 4.0;
+        color.b *= 4.0;
         var x = Math.random();
         var y = Math.random();
         var dx = 1000 * (Math.random() - 0.5);
@@ -1074,9 +1074,9 @@ function correctDeltaY (delta) {
 
 function generateColor () {
     var c = HSVtoRGB(Math.random(), 1.0, 1.0);
-    c.r *= 0.15;
-    c.g *= 0.15;
-    c.b *= 0.15;
+    c.r *= 0.07;
+    c.g *= 0.07;
+    c.b *= 0.07;
     return c;
 }
 
